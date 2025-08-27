@@ -1,0 +1,69 @@
+.navbar {
+  background: rgba(12, 10, 31, 0.8);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar-brand a:hover {
+  color: var(--text-primary);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.auth-btn {
+  background-color: var(--secondary-accent);
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.auth-btn:hover {
+  background-color: var(--primary-accent);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar-links {
+    gap: 0.5rem;
+  }
+}
